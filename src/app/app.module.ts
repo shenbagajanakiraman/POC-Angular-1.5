@@ -11,6 +11,7 @@ import { CardDisplayComponent } from './card-display/card-display.component';
 import { MusicServiceService } from './music-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
+import { FavouriteTracksComponent } from './favourite-tracks/favourite-tracks.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DetailsComponent } from './details/details.component';
     FooterComponent,
     ContentComponent,
     CardDisplayComponent,
-    DetailsComponent
+    DetailsComponent,
+    FavouriteTracksComponent
   ],
   imports: [
     BrowserModule,

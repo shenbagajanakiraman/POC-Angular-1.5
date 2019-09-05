@@ -17,13 +17,18 @@
 
       <p> <b> Listener's count : </b> {{musicData.album.listeners}}</p>
       <p> <b> Playcount : </b> {{musicData.album.playcount}}</p>       
-      <p> <b> Published : </b> {{musicData.album.wiki.published}}</p>
-      <p> <b> Summary : </b>{{musicData.album.wiki.summary}} </p>
+      <p> <b> Published : </b> - {{musicData.album.wiki.published}} </p>
+      <p> <b> Summary : </b> - {{musicData.album.wiki.summary}} </p>
 
     </div>
+    </div>
+</div>
 
+    <div class="button-controls">
 
-    <button type="button" class="btn btn-primary">Home</button>
-    <button type="button" class="btn btn-danger">Add to Favourites</button>
+    <button type="button" class="btn btn-dark" routerLink="/home" routerLinkActive="active">Home</button>
+    <button type="button" class="btn btn-dark">Add to Favourites</button>
+
+  </div>
 
     

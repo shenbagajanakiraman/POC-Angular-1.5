@@ -36,9 +36,16 @@ console.log(data.tracks.track);
   details(artistName,albumName)
   {
     console.log("On click works..");
-    // this.router.navigateByUrl("/details/"+value.name+"/"+value.artist.name);
 
     this.router.navigateByUrl("details/"+artistName+"/"+albumName);
+  }
+
+
+  addToFav(albumName, artistName, playCount) {
+
+    console.log("Add to Fav... Btn click");
+    this.router.navigateByUrl("addTrack/"+albumName+"/"+artistName+"/"+playCount);
+
   }
 
 }

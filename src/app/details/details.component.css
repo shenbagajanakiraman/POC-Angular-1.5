@@ -3,3 +3,12 @@ img {
     width:100%;
 }
 
+button {
+     display: inline-block;
+     margin-left: 10px;
+}
+
+
+.button-controls {
+    text-align: center;
+}
