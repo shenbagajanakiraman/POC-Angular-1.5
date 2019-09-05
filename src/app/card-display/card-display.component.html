@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="display-cards" *ngFor="let data of arrayOfMusic">
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/guitar.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"> Track : {{data.name}}</h5>
+          <h5 class="card-title"> Artist : {{data.artist.name}}</h5>
+          <h5 class="card-title"> Playcount : {{data.playcount}}</h5>
+<!-- <div class="row"> -->
+          <button type="button" class="btn btn-info">Details</button>
+          <button type="button" class="btn btn-danger">Add to Favourites</button>
+
+        <!-- </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

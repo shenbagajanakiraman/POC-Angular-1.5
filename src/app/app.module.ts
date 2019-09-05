@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { OnClickComponent } from './on-click/on-click.component';
+import { CardDisplayComponent } from './card-display/card-display.component';
+import { MusicServiceService } from './music-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,13 +19,15 @@ import { OnClickComponent } from './on-click/on-click.component';
     NavbarComponent,
     FooterComponent,
     ContentComponent,
-    OnClickComponent
+    OnClickComponent,
+    CardDisplayComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MusicServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
