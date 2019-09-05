@@ -1,0 +1,13 @@
+
+
+.footer-copyright {
+    background-color: #373a48;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    /* margin: 10px; */
+    color: #ccc;
+}

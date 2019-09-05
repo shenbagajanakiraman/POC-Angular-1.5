@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { ContentComponent } from './content/content.component';
-import { OnClickComponent } from './on-click/on-click.component';
+import { DetailsComponent } from './details/details.component';
 
 
 const routes: Routes = [
   { path: '', component: ContentComponent, pathMatch: 'full' },
-  { path: 'click', component: OnClickComponent }
+  {path:'details/:artistName/:albumName',component:DetailsComponent}
 
 ];
 @NgModule({

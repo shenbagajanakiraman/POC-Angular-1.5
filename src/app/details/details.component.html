@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-md-4 py-5">
+
+      <img src="{{musicData.album.image[2]['#text']}}" class="rounded mx-auto d-block img-responsive" alt="Album Cover pic">
+
+    </div>
+
+    <div class="col-md-8 py-5 detail-data">
+
+
+
+      <h2 class="display-5"> <b> Artist : </b>{{musicData.album.artist}}</h2>
+      <h2 class="display-5"><b> Track : </b>"{{musicData.album.name}}"</h2>
+
+      <br>
+
+      <p> <b> Listener's count : </b> {{musicData.album.listeners}}</p>
+      <p> <b> Playcount : </b> {{musicData.album.playcount}}</p>       
+      <p> <b> Published : </b> {{musicData.album.wiki.published}}</p>
+      <p> <b> Summary : </b>{{musicData.album.wiki.summary}} </p>
+
+    </div>
+
+
+    <button type="button" class="btn btn-primary">Home</button>
+    <button type="button" class="btn btn-danger">Add to Favourites</button>
+
+    

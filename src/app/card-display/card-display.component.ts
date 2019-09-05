@@ -20,15 +20,25 @@ export class CardDisplayComponent implements OnInit {
 
 
   ngOnInit() {
-    // console.log(this.arrayOfData);
+    console.log(this.arrayOfMusic);
 
     this.musicservice.getTrendingMusic().subscribe(data =>{
+      console.log("Data check");
+
 console.log(data.tracks.track);
       this.arrayOfMusic=data.tracks.track;
       console.log(this.arrayOfMusic[0].name);
       console.log("Data check");
     });
   
+  }
+
+  details(artistName,albumName)
+  {
+    console.log("On click works..");
+    // this.router.navigateByUrl("/details/"+value.name+"/"+value.artist.name);
+
+    this.router.navigateByUrl("details/"+artistName+"/"+albumName);
   }
 
 }
