@@ -2,7 +2,7 @@
   <div class="row">
     <div class="display-cards" *ngFor="let data of arrayOfMusic">
 
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem; height: 25rem ">
         <img class="card-img-top" src="../../assets/guitar.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title"> <b>Track : </b>{{data.name}}</h5>
@@ -10,7 +10,7 @@
           <h5 class="card-title"> <b>Playcount :</b> {{data.playcount}}</h5>
           <button type="button" class="btn btn-info"  (click)="details(data.artist.name,data.name)">Details</button>
           <button type="button" class="btn btn-danger" (click)="addToFav(data.name, data.artist.name, data.playcount)">Add to Favourites</button>
-
+        
 
         </div>
       </div>
